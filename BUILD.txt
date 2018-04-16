@@ -1,0 +1,14 @@
+Simple build instructions:
+------------------------------------------------------------------------
+
+Ensure you have PyInstaller installed
+Ensure you have 32-bit Python 2.7 installed
+
+Delete build/ & dist/
+
+Run:
+ - pyinstaller -p libs -i AuditIcon.ico --version-file=version.py --noconsole --onefile LW-Audit-Logger.py
+
+Copy AuditIcon.ico into dist/
+
+ZIP up the dist/ folder and distribute as needed
