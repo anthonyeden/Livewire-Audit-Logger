@@ -5,7 +5,7 @@ __author__      = "Anthony Eden"
 __copyright__   = "Copyright 2018, Anthony Eden / Media Realm"
 __credits__     = ["Anthony Eden"]
 __license__     = "Commercial"
-__version__     = "1.0.0"
+__version__     = "1.0.1"
 
 import os, sys
 sys.path.append(os.path.dirname(os.path.realpath(__file__)) + "/libs")
@@ -292,7 +292,7 @@ class Application(tk.Frame):
         thread.start_new_thread(os.startfile, (self.application_path, "explore"))
 
     def about(self):
-        variable = tkMessageBox.showinfo('Livewire Audit Logger', 'Livewire Audit Logger\nCreated by Anthony Eden (http://mediarealm.com.au/)\nVersion: ' + __version__)
+        variable = tkMessageBox.showinfo('Livewire Audit Logger', 'Livewire Audit Logger\nCreated by Anthony Eden (https://mediarealm.com.au/)\nThis is commercial software - please purchase a license to use this at your station.\nVersion: ' + __version__)
 
     def close(self):
         # Terminate the application

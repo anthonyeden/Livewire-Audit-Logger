@@ -9,6 +9,8 @@ Delete build/ & dist/
 Run:
  - pyinstaller -p libs -i AuditIcon.ico --version-file=version.py --noconsole --onefile LW-Audit-Logger.py
 
+ - signtool.exe sign /tr http://timestamp.digicert.com /td sha256 /fd sha256 /f SigningCert /p <<PASSWORD>> LW-Audit-Logger.exe
+
 Copy AuditIcon.ico into dist/
 
 ZIP up the dist/ folder and distribute as needed
